@@ -6,7 +6,7 @@ In the VVVVCTokenDistributor::claim function, tokens are transferred to msg.send
 
 ## Root Cause
 
-In VVVVCTokenDistributor::claim, project tokens are transferred to msg.sender. If a malicious address front-runs the function call, it becomes the msg.sender and claims the tokens.
+In [VVVVCTokenDistributor::claim](https://github.com/sherlock-audit/2024-11-vvv-exchange-update/blob/main/vvv-platform-smart-contracts/contracts/vc/VVVVCTokenDistributor.sol#L133), project tokens are transferred to msg.sender. If a malicious address front-runs the function call, it becomes the msg.sender and claims the tokens.
 
 ## Internal pre-conditions
 
@@ -60,7 +60,7 @@ function claim(ClaimParams memory _params) public {
         projectToken.safeTransferFrom(
             _params.projectTokenProxyWallets[i],
 -           msg.sender,
-+	        _params.kycAddress,
++	     _params.kycAddress,
             _params.tokenAmountsToClaim[i]
         );
     }
