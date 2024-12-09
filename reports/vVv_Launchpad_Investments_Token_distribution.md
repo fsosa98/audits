@@ -60,7 +60,7 @@ function claim(ClaimParams memory _params) public {
         projectToken.safeTransferFrom(
             _params.projectTokenProxyWallets[i],
 -           msg.sender,
-+	     _params.kycAddress,
++	    _params.kycAddress,
             _params.tokenAmountsToClaim[i]
         );
     }
