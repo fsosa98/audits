@@ -5,6 +5,7 @@ Smart contract audit reports, security reviews, and vulnerability assessments to
 ## Competitive Audits
 
 - [vVv Launchpad - Investments & Token distribution](https://audits.sherlock.xyz/contests/647) - 1st place
+- [Ethos Network Financial Contracts](https://audits.sherlock.xyz/contests/675)
 
 ## CodeHawks First Flights Audits
 
