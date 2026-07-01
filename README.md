@@ -2,6 +2,12 @@
 
 Smart contract audit reports, security reviews, and vulnerability assessments to ensure the integrity and safety of blockchain projects.
 
+## Private Audits
+
+| Project  | Description | Report  |
+|----------|-------------|----------|
+| [Centrifuge](https://centrifuge.io/)    | Passthrough vaults routing asynchronous user deposits directly into underlying vaults  | [📄](https://github.com/burrasec/Security-Reviews/blob/main/reports/2026-06-Centrifuge-Passthrough-Vaults.pdf)  |
+
 ## Competitive Audits
 
 | Contest  | Description | Ranking  |
